@@ -15,10 +15,11 @@ public class SessionManager {
 
     public static final String SESSION_COOKIE_NAME = "mySessionId";
     private Map<String, Object> sessionStore = new ConcurrentHashMap<>();
+
     /**
      * 세션 생성
      * * sessionId 생성(임의의 추정 불가능한 랜덤 값)
-     * * 세션 저장소에 sessionId와 보관할 값 저장
+     * * 세션 저장소에 sessionId와 보관할 값(여기선 Member 객체) 저장
      * * sessionId로 응답 쿠키를 생성해서 클라에게 전달
      */
 
